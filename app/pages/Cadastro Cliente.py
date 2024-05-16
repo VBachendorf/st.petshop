@@ -11,7 +11,7 @@ p.data_nascimento
 from pessoas p 
 """
 def mostrar_cliente():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('app\\db_pet.db') as conexao:
         return pd.read_sql_query(consulta_cliente, conexao)
 
 

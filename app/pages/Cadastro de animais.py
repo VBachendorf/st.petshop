@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import sqlite3
-conn = sqlite3.connect('24-04-29\\db_pet.db')
+conn = sqlite3.connect('app\\db_pet.db')
 def db_cadastro_especie(nome,is_mamifero,nome_familia):
     try:
         cursor = conn.cursor()
@@ -46,17 +46,17 @@ def db_cadastro_animal(nome,id_raca,id_pessoa,data_nascimento,sexo,peso,altura):
         conn.close()
 
 def mostrar_especies():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('app\\db_pet.db') as conexao:
         return pd.read_sql_query("SELECT id, name  FROM especies", conexao)
 especies=mostrar_especies()
 
 def mostrar_racas():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('app\\db_pet.db') as conexao:
         return pd.read_sql_query("SELECT id_especie as id, name  FROM racas", conexao)
 racas=mostrar_racas()
 
 def mostrar_pessoa():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('app\\db_pet.db') as conexao:
         return pd.read_sql_query("SELECT id, nome as name  FROM pessoas", conexao)
 pessoa=mostrar_pessoa()
 

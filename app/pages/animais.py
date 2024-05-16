@@ -18,7 +18,7 @@ left join pessoas p on
 
 """
 def mostrar_animais():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('app\\db_pet.db') as conexao:
         return pd.read_sql_query(consulta_animal, conexao)
 
 

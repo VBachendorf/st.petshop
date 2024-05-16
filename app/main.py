@@ -8,11 +8,11 @@ from cadastro import inserir_animal
 
 # Ler os dados da tabela animal e exibi-los em um DataFrame
 def mostrar_animais():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('db_pet.db') as conexao:
         return pd.read_sql_query("SELECT * FROM animal", conexao)
 
 def mostrar_racas():
-    with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+    with sqlite3.connect('db_pet.db') as conexao:
         return pd.read_sql_query("SELECT id,name from racas r", conexao)
 
 

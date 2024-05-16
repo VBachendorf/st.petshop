@@ -1,11 +1,11 @@
 import sqlite3
 import pandas as pd
-conexao = sqlite3.connect('24-04-29\\db_pet.db') 
+conexao = sqlite3.connect('app\\db_pet.db') 
 c = conexao.cursor()
 
 def inserir_animal(nome, id_raca, data_nascimento, sexo, peso, altura):
     try:
-        with sqlite3.connect('24-04-29\\db_pet.db') as conexao:
+        with sqlite3.connect('app\\db_pet.db') as conexao:
             cursor = conexao.cursor()
             sql = '''INSERT INTO animal(nome, id_raca, data_nascimento, sexo, peso, altura)
                      VALUES (?, ?, ?, ?, ?, ?)'''
