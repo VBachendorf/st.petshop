@@ -1,0 +1,49 @@
+Plano de Aula: Introdução ao SQLite para Ciência de Dados
+
+Objetivo: Introduzir os alunos ao uso do SQLite como ferramenta para manipulação de dados em projetos de Ciência de Dados.
+
+Duração: 2 horas
+
+Pré-requisitos: Conhecimento básico de SQL e familiaridade com o ambiente de programação Python.
+
+Recursos Necessários: Computadores com Python instalado e acesso à internet.
+
+Atividades:
+
+1. Introdução ao SQLite (15 minutos)
+
+Breve explicação sobre o que é o SQLite e por que é utilizado em projetos de Ciência de Dados.
+Discussão sobre as vantagens do SQLite em relação a outros bancos de dados.
+Demonstrar como o SQLite é uma ótima escolha para projetos de pequeno e médio porte.
+2. Conectar ao Banco de Dados (20 minutos)
+
+Ensinar os alunos como conectar ao banco de dados SQLite usando Python.
+Explicar o uso do módulo sqlite3 em Python para interagir com o banco de dados.
+Guia passo a passo para estabelecer a conexão com o banco de dados e criar um cursor.
+3. Inserção de Dados (30 minutos)
+
+Demonstração de como inserir dados em tabelas SQLite utilizando Python.
+Exemplo prático de criação de uma tabela e inserção de registros.
+Atividade prática: Peça aos alunos para criarem uma tabela simples e inserirem alguns dados fictícios.
+4. Coleta de Dados (30 minutos)
+
+Explicar como recuperar dados de uma tabela SQLite utilizando consultas SQL em Python.
+Demonstrar o uso de consultas SELECT para coletar dados específicos.
+Exemplo prático de consulta a uma tabela SQLite.
+Atividade prática: Os alunos devem escrever consultas SQL para extrair informações específicas de uma tabela criada anteriormente.
+5. Exercício Integrado (25 minutos)
+
+Propor um exercício que englobe todas as habilidades aprendidas até agora.
+Os alunos devem criar uma tabela, inserir dados nela e, em seguida, realizar consultas para extrair informações específicas.
+Incentive a criatividade dos alunos na elaboração das consultas e na análise dos dados.
+6. Discussão e Encerramento (10 minutos)
+
+Conduza uma discussão sobre os desafios enfrentados durante as atividades.
+Peça aos alunos que compartilhem suas experiências e aprendizados.
+Faça um resumo dos principais conceitos abordados.
+Forneça recursos adicionais para estudo, como tutoriais online e documentação oficial do SQLite e do módulo sqlite3 em Python.
+Recursos Extras:
+
+Documentação SQLite: https://www.sqlite.org/docs.html
+Documentação do módulo sqlite3 em Python: https://docs.python.org/3/library/sqlite3.html
+Tutoriais online sobre SQLite e Python.

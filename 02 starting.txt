@@ -1,0 +1,6 @@
+como uma atividade de boas praticas, solicito repartir o scripts (arquivo) em etapas:
+ao invés de concentrar tudo em uma aplicação .py  que executa diversas funções e classes, divida-o em vários arquivos.
+
+conexao.py <<-- arquivo para conexão ao banco de dados
+funcoes.py  <<-- arquivo com as funções que serão utilizadas no script principal
+
