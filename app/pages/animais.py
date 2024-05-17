@@ -1,6 +1,12 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
+
+
+import os
+db_path = '/db_pet.db'
+
+
 consulta_animal =  """
 SELECT
 a.nome as nome,
@@ -18,7 +24,7 @@ left join pessoas p on
 
 """
 def mostrar_animais():
-    with sqlite3.connect('app\\db_pet.db') as conexao:
+    with sqlite3.connect(db_path) as conexao:
         return pd.read_sql_query(consulta_animal, conexao)
 
 

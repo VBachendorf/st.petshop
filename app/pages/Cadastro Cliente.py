@@ -1,6 +1,12 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
+
+
+import os
+db_path = '/db_pet.db'
+
+
 consulta_cliente =  """
 SELECT 
 p.nome,
@@ -11,7 +17,7 @@ p.data_nascimento
 from pessoas p 
 """
 def mostrar_cliente():
-    with sqlite3.connect('app\\db_pet.db') as conexao:
+    with sqlite3.connect(db_path) as conexao:
         return pd.read_sql_query(consulta_cliente, conexao)
 
 

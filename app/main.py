@@ -1,18 +1,21 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
+import os
+db_path = '/db_pet.db'
 
-from cadastro import inserir_animal
+
+#from cadastro import inserir_animal
 
 # Função para inserir um novo animal no banco de dados
 
 # Ler os dados da tabela animal e exibi-los em um DataFrame
 def mostrar_animais():
-    with sqlite3.connect('db_pet.db') as conexao:
+    with sqlite3.connect(db_path) as conexao:
         return pd.read_sql_query("SELECT * FROM animal", conexao)
 
 def mostrar_racas():
-    with sqlite3.connect('db_pet.db') as conexao:
+    with sqlite3.connect(db_path) as conexao:
         return pd.read_sql_query("SELECT id,name from racas r", conexao)
 
 
@@ -39,6 +42,6 @@ altura = col3.number_input('Informe a altura', key='altura', min_value=0)
 if st.button('Enviar dados'):
     id_raca=int(racas.loc[racas['name'] == raca, 'id'].values[0])
     print(id_raca)
-    inserir_animal(nome, id_raca, data_nascimento, sexo, peso, altura)   
+    #inserir_animal(nome, id_raca, data_nascimento, sexo, peso, altura)   
     st.success('Animal cadastrado com sucesso!')
     
