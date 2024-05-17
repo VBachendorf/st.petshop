@@ -4,7 +4,7 @@ import sqlite3
 
 
 import os
-db_path = '/db_pet.db'
+db_path = 'db_pet.db'
 
 
 conn = sqlite3.connect(db_path)

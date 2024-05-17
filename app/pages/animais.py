@@ -4,7 +4,7 @@ import pandas as pd
 
 
 import os
-db_path = '/db_pet.db'
+db_path = 'db_pet.db'
 
 
 consulta_animal =  """

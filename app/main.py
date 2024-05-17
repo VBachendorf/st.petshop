@@ -2,7 +2,7 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 import os
-db_path = '/db_pet.db'
+db_path = 'db_pet.db'
 
 
 #from cadastro import inserir_animal
